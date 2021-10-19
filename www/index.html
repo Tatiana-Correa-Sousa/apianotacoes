@@ -5,33 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5b3b12e67c.js" crossorigin="anonymous"></script>
     <title>Anotações</title>
 </head>
 <body>
-    <h1>Minhas Anotações</h1>
-    <div>
-        <input id="id" type="text" hidden>
+    <section class="container">
+        <header>
+            <i class="fas fa-thumbtack"></i>
+            <h1>Notes</h1>
+        </header>
+        <section class="form">
+            <div>
+                <input id="id" type="text" hidden>
 
-        <label for="">
-            Titulo da Anotação:<br/>
-            <input id="titulo" type="text" placeholder="Digite o título">
-        </label>
-        <br/><br/>
-        <label for="">
-            Anotação:<br/>
-            <textarea name="" id="anotacao" rows="5" placeholder="Digite a anotação"></textarea>
-        </label>
-        <br/>
-        <button>
-            Cancelar
-        </button>
-        <button onclick="salvar()">
-            Salvar
-        </button>
-    </div>
+                <label for="">
+                    Titulo<br/>
+                    <input id="titulo" type="text">
+                </label>
+                <br/><br/>
+                <label for="">
+                    Anotação<br/>
+                    <textarea name="" id="anotacao" rows="5"></textarea>
+                </label>
+                <br/>
+                <button>
+                    Cancelar
+                </button>
+                <button onclick="salvar()">
+                    Salvar
+                </button>
+            </div>
+        </section>
 
-    <div class="list">
-    </div>
+        <div class="list">
+        </div>
+    </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
