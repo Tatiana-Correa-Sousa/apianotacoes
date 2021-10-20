@@ -18,24 +18,24 @@
             <h1>Notes</h1>
         </header>
         <section class="form">
-            <div>
+            <div id="formulario">
                 <input id="id" type="text" hidden>
 
                 <label for="">
-                    Titulo<br/>
+                    Title<br/>
                     <input id="titulo" type="text">
                 </label>
                 <br/><br/>
                 <label for="">
-                    Anotação<br/>
+                    Note<br/>
                     <textarea name="" id="anotacao" rows="5"></textarea>
                 </label>
                 <br/>
-                <button>
-                    Cancelar
+                <button class="buttonform buttoncancel">
+                    Cancel
                 </button>
-                <button onclick="salvar()">
-                    Salvar
+                <button onclick="salvar()" class="buttonform buttonsave">
+                    Save
                 </button>
             </div>
         </section>

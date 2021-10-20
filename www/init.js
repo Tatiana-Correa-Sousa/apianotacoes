@@ -41,8 +41,8 @@ function listar () {
                     <div class="item">
                         <h2>${note.title}</h2>
                         <p>${note.description}</p>
-                        <button onclick="excluir('${note.id}')">Excluir</button>
-                        <button onclick="editar('${note.id}')">Editar</button>
+                        <button class="itembutton" onclick="excluir('${note.id}')">Excluir</button>
+                        <button class="itembutton editarbutton" onclick="editar('${note.id}')">Editar</button>
                     </div>
                 `)
             }
